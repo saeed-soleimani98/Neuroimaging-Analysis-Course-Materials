@@ -1,5 +1,3 @@
-
-# **Inter Disciplinary School**
 # **Neuroimaging Analysis – Course Repository**
 
 **Authors:**
@@ -7,11 +5,17 @@
 * **Fatemeh Jafari** – Sessions 1–6
 * **Mohammad Saeed Soleimani** – Sessions 7–11
 
-This repository contains all teaching materials for a complete, hands-on course in **Neuroimaging Data Analysis using Python**.
-The course gradually builds students’ skills—from foundational Python and data science (Sessions 1–6) to full neuroimaging workflows including segmentation, registration, GLM modeling, masking, ROI analysis, and functional connectivity (Sessions 7–11).
+**Program:**
+**Neuroscience Research Training Program – fMRI Department, Interdisciplinary School**
 
-Sessions 1–6 follow the textbook ***Data Science for Neuroimaging***.
-Sessions 7–11 are expanded practical modules developed specifically for this course.
+This repository contains the complete instructional materials for a hands-on training course in **Neuroimaging Data Analysis using Python**, delivered as part of the neuroscience research training curriculum.
+
+Sessions **1–9** closely follow and implement concepts from the reference textbook:
+
+> **Ariel Rokem & Tal Yarkoni (2024), *Data Science for Neuroimaging: An Introduction*, Princeton University Press**
+>
+
+Sessions **10–11** expand into applied fMRI modeling and connectivity analysis using modern neuroimaging tools.
 
 ---
 
@@ -23,392 +27,371 @@ session2-numpy/
 session3-pandas/
 session4-neuroimaging-python/
 session5-practical-neuroimaging/
-session6-project/
-
+session6-practical-neuroimaging-part 2/
 session7-image-processing/
 session8-segmentation/
 session9-registration/
 session10-masking/
 session11-firstlevel-GLM/
 session11-functional-connectivity/
+mini project of 6 first sessions /
+project for fMRI analysis
 ```
 
 ---
 
 # **📚 Course Overview**
 
-The course is divided into two modules:
-
-* **Module 1** — Data Science Foundations (Sessions 1–6)
-  *Instructor: Fatemeh Jafari*
-
-* **Module 2** — Neuroimaging Core Analysis (Sessions 7–11)
-  *Instructor: Mohammad Saeed Soleimani*
+The course is divided into two major modules:
 
 ---
 
-# **MODULE 1 — Data-Science Foundations for Neuroimaging**
+# MODULE 1 — Data Science Foundations for Neuroimaging
 
 ### **Sessions 1–6 — Instructor: Fatemeh Jafari**
 
-*Based on “Data Science for Neuroimaging”*
+### **Based on *Data Science for Neuroimaging: An Introduction***
+
+
 
 ---
 
 ## **Session 1 — Python & Data Science Review**
 
-**Topics Covered**
+Introduces core Python programming concepts necessary for reproducible neuroimaging analysis.
 
-* Basic data types and variables
-* Control flow: loops, conditionals
-* Functions and modularity
-* Lists, dictionaries, tuples
-* Good scientific coding practices
+**Topics**
 
-**Outcome:**
-Students become comfortable with essential Python skills used heavily in numerical and neuroimaging analysis.
+* Variables, data types, lists, dictionaries
+* Loops, conditionals, functions
+* Modularity and clean code
+* Basic scripting for scientific work
+
+**Outcome:** Students gain functional fluency in Python fundamentals.
 
 ---
 
 ## **Session 2 — Numerical Computing with NumPy**
 
+Students learn high-performance numerical programming using arrays.
+
 **Topics**
 
-* Understanding the `ndarray` data structure
-* Creating arrays: `zeros`, `ones`, random arrays, identity matrices
-* Slicing, indexing, reshaping
-* Broadcasting rules
-* Vectorized math operations
-* Reductions (mean, sum, std, argmax, etc.)
+* `ndarray` structure
+* Array creation & manipulation
+* Broadcasting and vectorized operations
+* Statistical operations & mathematical functions
 
 **Outcome:**
-Students gain the ability to manipulate multidimensional numerical data efficiently—core for 3D MRI volumes and 4D fMRI data.
+Builds the mathematical foundation for MRI/fMRI data (3D/4D arrays).
 
 ---
 
 ## **Session 3 — Data Manipulation with Pandas**
 
+Essential training for working with experiment metadata, event files, and confounds.
+
 **Topics**
 
-* DataFrame and Series
-* Input/output (CSV, TSV, Excel)
-* Selecting columns/rows
-* Filtering & boolean indexing
-* Groupby operations
-* Merging and joining tables
-
-**Outcome:**
-Students learn how to manage event files, confounds, behavioral metadata, and statistical tables for future GLM and connectivity analysis.
+* DataFrame & Series
+* Filtering, indexing, grouping
+* Joining and merging data tables
+* Exploratory data analysis
 
 ---
 
 ## **Session 4 — Introduction to Neuroimaging in Python**
 
+Students connect Python tools to neuroimaging datasets.
+
 **Topics**
 
-* Basics of MRI, fMRI, and neuroimaging modalities
+* MRI & fMRI modalities
 * NIfTI format and metadata
-* Understanding spatial axes, affine matrices, voxel sizes
-* Using NiBabel to load images
-* Visualizing slices
-
-**Outcome:**
-Students understand how neuroimaging data are stored, structured, and visualized using Python libraries.
+* Spatial orientation, affine transforms
+* Loading images with NiBabel
+* Basic visualization (axial/coronal/sagittal)
 
 ---
 
 ## **Session 5 — Practical Neuroimaging (Part 1)**
 
+Hands-on exploration of real neuroimaging data.
+
 **Topics**
 
-* Working with real neuroimaging datasets
-* Loading 3D/4D images
-* Extracting single slices
-* Time-series visualization of voxels
-* Exploring intensity distributions
-
-**Outcome:**
-Students learn the first practical steps in interacting with real MRI and fMRI datasets.
+* Navigating 3D/4D NIfTI volumes
+* Slice visualization
+* Voxel time-series extraction
+* Intensity distributions
 
 ---
 
 ## **Session 6 — Practical Neuroimaging (Part 2 & Mini Project)**
 
+Students combine Python tools to create mini neuroimaging workflows.
+
 **Topics**
 
-* Building analysis scripts for fMRI
-* Combining Python + NumPy + Pandas + neuroimaging tools
-* Creating simple preprocessing and visualization workflows
-* Completing a guided analysis project
-
-**Outcome:**
-Students finish a mini-project and demonstrate readiness for advanced neuroimaging tasks.
+* Basic preprocessing
+* Exploratory fMRI analysis
+* Simple pipeline building
+* Data visualization
 
 ---
 
-# ---
+# MODULE 1 → MODULE 2 TRANSITION
 
-# **MODULE 2 — Neuroimaging Core Analysis (Sessions 7–11)**
+### Sessions 7–9 also draw directly from the image processing chapters of
 
-### **Instructor: Mohammad Saeed Soleimani**
+### *Data Science for Neuroimaging* (Ch. 14–16).
 
-*Expanded detailed explanations included.*
+
+
+---
+
+# MODULE 2 — Core Neuroimaging Analysis
+
+### **Sessions 7–11 — Instructor: Mohammad Saeed Soleimani**
+
+(Expanded detailed explanations included.)
 
 ---
 
 # **Session 7 — Image Processing & Multidimensional Neuroimaging Data**
 
-This session introduces how images—including neuroimaging volumes—are represented as **multidimensional arrays**, and how this conceptual shift empowers efficient analysis.
+This session builds the conceptual framework to understand MRI/fMRI data as **multidimensional arrays**, an essential perspective for all subsequent analysis.
 
 ---
 
-### **1. Images as Arrays**
+## **1. Images as Numerical Arrays**
 
-* **2D images (grayscale)** → matrices of shape `(H × W)`
-* **RGB images** → `(H × W × 3)`
-* Demonstration: shuffling pixels destroys structure but not pixel values, highlighting the importance of spatial order.
+Students explore:
 
----
+* Grayscale → 2D arrays
+* RGB → 3D arrays
+* MRI → 3D volumes
+* fMRI → 4D data (3D + time)
 
-### **2. Transition to MRI/fMRI Data**
-
-* **MRI** = 3D data → `(X, Y, Z)`
-* **fMRI** = 4D data → `(X, Y, Z, T)` representing time
-* Each element in these arrays = **voxel** (3D equivalent of a pixel)
-
-Students inspect:
-
-* Voxel coordinates
-* Affine transformations (mapping voxel → world coordinates)
-* TR (repetition time)
-* Time-series for specific voxels (to understand BOLD fluctuations)
+A key demonstration shows how **spatial information is crucial**—shuffling pixel values destroys meaning despite unchanged intensity values.
 
 ---
 
-### **3. Practical Demonstrations**
+## **2. MRI and fMRI Data Structure**
 
-* Loading Haxby dataset
-* Viewing anatomical & functional slices
-* Extracting volumes at different time points
-* Plotting voxel time-series
-
----
-
-### **Learning Outcome**
-
-Students deeply understand the structure of neuroimaging data and how to manipulate/visualize it efficiently.
+* Voxel coordinate systems
+* Affine matrices linking voxel → world space
+* TR and time dimension in fMRI
+* Inspection of image header metadata
 
 ---
 
-# **Session 8 — Segmentation for Neuroimaging**
+## **3. Practical Work**
 
-Segmentation separates the brain from non-brain structures and differentiates tissues like **gray matter (GM)**, **white matter (WM)**, and **CSF**.
-
----
-
-## **1. Understanding Intensity Histograms**
-
-Students learn how different tissues produce different peaks in intensity histograms:
-
-* Background air → lowest intensities
-* CSF → low–medium
-* Gray matter → medium
-* White matter → higher intensities
-
-Histograms guide thresholding decisions.
+* Load Haxby dataset
+* Extract slices across different planes
+* View single volumes
+* Plot voxel-level time-series to understand BOLD fluctuations
 
 ---
 
-## **2. Thresholding Methods**
+### **Outcome:**
 
-### **Mean-based Threshold**
-
-* Simple and fast
-* Suitable for background removal
-* Poor for separating tissues with overlapping intensities
-
-### **Otsu’s Method (1-threshold)**
-
-* Automatic threshold selection
-* Maximizes separation between foreground/background
-* Better than simple mean thresholding
-
-### **Multi-Otsu (multi-class segmentation)**
-
-* Produces multiple thresholds → multiple tissue classes
-* Useful for:
-
-  * Separating CSF / GM / WM
-  * Rough skull stripping
-
-Students compare segmentation masks to the original image and evaluate performance.
+Students fully understand how neuroimaging data are stored, represented, and manipulated computationally.
 
 ---
 
-## **3. Visualizing Segmentation Results**
+# **Session 8 — Segmentation**
 
-* Overlaying masks on images
-* Color-coded tissue labels
-* Extracting segmented brain volumes
+Students learn how to isolate brain tissue using intensity-based segmentation, as introduced in Ch. 15 of the reference book.
 
----
-
-## **Learning Outcome**
-
-Students learn practical segmentation workflows, understand their limitations, and gain intuition about MRI tissue intensities.
 
 ---
 
-# **Session 9 — Image Registration**
+## **1. Tissue Intensity Distributions**
 
-Registration aligns images so that corresponding anatomical structures overlap correctly.
+Using histograms, students learn to identify:
+
+* Background air
+* CSF
+* Gray matter
+* White matter
 
 ---
 
-## **1. Why Registration Is Necessary**
+## **2. Thresholding Approaches**
 
-* Align functional images to anatomical images
-* Correct for head motion
-* Align images from different sessions/sources
-* Prepare images for group analysis (MNI normalization)
+### **Mean Thresholding**
+
+* Fast but imprecise
+* Good for rough background removal
+
+### **Otsu's Method (Single Threshold)**
+
+* Maximizes inter-class variance
+* Automatically finds optimal threshold
+
+### **Multi-Otsu Segmentation**
+
+* Produces multiple classes (background, GM, WM, high-CSF)
+* Suitable for rough volumetric tissue separation
+
+Students compare the masks visually and evaluate segmentation quality.
+
+---
+
+## **3. Visualization & Evaluation**
+
+* Mask overlays
+* Binary vs multi-class segmentation
+* Tissue boundaries
+
+---
+
+### **Outcome:**
+
+Students gain intuition for tissue intensity behavior and practical segmentation workflows.
+
+---
+
+# **Session 9 — Registration**
+
+Based on Ch. 16 of *Data Science for Neuroimaging*.
+
+
+Registration aligns images into a shared spatial frame—an essential step for fMRI preprocessing, subject alignment, and multimodal integration.
+
+---
+
+## **1. Why Registration Is Required**
+
+* Align anatomical and functional images
+* Correct for movement
+* Standardize subjects into template/MNI space
+* Compare across sessions and individuals
 
 ---
 
 ## **2. Transformations**
 
-Students learn:
+Students develop deep understanding of:
 
-* **Translation** (shifting)
-* **Rotation**
-* **Scaling**
-* **Shearing**
-* **Affine transformation** = combination of all above
+* Translation
+* Rotation
+* Scaling
+* Shearing
+* Affine matrices
 
-Visual examples show how images misalign and how channels (red/green overlays) highlight misalignment.
+RGB overlay visualizations show misalignment clearly.
 
 ---
 
-## **3. Cost Functions**
+## **3. Cost Functions & Optimization**
 
-Registration depends on optimizing similarity metrics:
-
-* **Mean Squared Error (MSE)** – good for same-modality images
-* **Mutual Information (MI)** – robust for multi-modality (T1 vs T2, or anatomical vs functional)
-
-Students learn why MI is preferred for MRI-based registration.
+* **MSE** for same-modality alignment
+* **Mutual Information (MI)** for multi-modality alignment
+* Gradient-based optimization considerations
 
 ---
 
 ## **4. Multiresolution Strategy**
 
-A pyramid approach:
+Students implement a pyramid approach:
 
-1. Downsample & blur image → coarse alignment (global structure)
-2. Medium resolution → refine
-3. Full resolution → fine adjustment
+1. Coarse alignment (downsampled)
+2. Medium refinement
+3. Fine full-resolution adjustment
 
-This avoids local minima and stabilizes optimization.
-
----
-
-## **5. Implementation with DIPY**
-
-Students implement:
-
-* `AffineRegistration`
-* Choosing metrics, interpolators
-* Running registration step-by-step
-* Inspecting the estimated affine matrix
-* Visual comparison before/after registration
+This prevents optimization from falling into poor local minima.
 
 ---
 
-## **Learning Outcome**
+## **5. Practical DIPY Implementation**
 
-Students acquire practical skills for performing and evaluating affine registration on MRI images.
+* Set up `AffineRegistration`
+* Define metric (MI), interpolator, optimizer
+* Estimate transform
+* Apply transform to moving image
+* Visual inspection before/after
+
+---
+
+### **Outcome:**
+
+Students become capable of performing and evaluating affine registration on neuroimaging datasets.
 
 ---
 
 # **Session 10 — Masking, Brain Atlases & Maskers**
 
-Masking defines which parts of the brain to analyze. Atlases define anatomical or functional regions.
+A full introduction to ROI-based neuroimaging workflows.
 
 ---
 
-## **1. Masking Concepts**
+## **1. Masks**
 
-* **Binary masks** select voxels for analysis
-* Masks help:
+Students learn to create and use masks to:
 
-  * Remove non-brain regions
-  * Focus analysis on ROIs
-  * Improve statistical power by reducing noise
-
-Students create masks manually and explore automated ones.
+* Remove non-brain regions
+* Define anatomical structures
+* Constrain GLM/modeling to desired voxels
 
 ---
 
 ## **2. Atlases**
 
-Students work with:
+Using the Harvard–Oxford atlas, students:
 
-* **Harvard–Oxford cortical atlas**
-* Label maps where each voxel has a region ID
-* Region names mapped to index values
-
-Tasks include:
-
-* Listing atlas labels
-* Extracting single-region masks
-* Plotting ROI overlays
+* Load atlas images
+* Inspect region labels
+* Extract ROI masks
+* Visualize ROI boundaries
 
 ---
 
-## **3. Maskers (Nilearn)**
+## **3. Maskers in Nilearn**
 
-Maskers convert brain images → numerical matrices.
+Maskers convert neuroimaging data → 2D matrices usable in machine learning and statistics.
 
-Students learn four key maskers:
+Students learn four major maskers:
 
-### **`NiftiMasker`**
+### **NiftiMasker**
 
-* Extracts voxel time-series from a binary mask
-* Performs:
+Voxel-level extraction with:
 
-  * Standardization
-  * Detrending
-  * Smoothing
-  * Confound removal
+* Standardization
+* Confound removal
+* Filtering & smoothing
 
-### **`NiftiLabelsMasker`**
+### **NiftiLabelsMasker**
 
-* ROI-level signals based on atlas labels
+ROI-summary signals based on atlas labels.
 
-### **`NiftiMapsMasker`**
+### **NiftiMapsMasker**
 
-* For probabilistic atlases (e.g., ICA networks)
+Probabilistic atlas support (e.g., ICA maps).
 
-### **`NiftiSpheresMasker`**
+### **NiftiSpheresMasker**
 
-* For seed-based analyses
+Seed-based extraction for connectivity.
 
 ---
 
-## **Learning Outcome**
+### **Outcome:**
 
-Students learn how atlas-based ROIs are created and used, and how maskers simplify extraction of meaningful brain signals.
+Students master ROI creation, atlas navigation, and time-series extraction pipelines.
 
 ---
 
-# **Session 11a — First-Level GLM (Voxelwise fMRI Modeling)**
+# **Session 11a — First-Level GLM Analysis**
 
-Students learn the complete pipeline for modeling task-based fMRI responses.
+Students learn how to build and fit statistical models to fMRI time-series.
 
 ---
 
 ## **1. The GLM Framework**
 
-At each voxel, we model:
+At each voxel:
 
 [
 Y = X\beta + \epsilon
@@ -416,132 +399,109 @@ Y = X\beta + \epsilon
 
 Where:
 
-* **Y** = voxel time-series
-* **X** = design matrix (task regressors + confounds + drifts)
-* **β** = estimated response amplitudes
-* **ε** = noise
-
-Students learn:
-
-* Why fMRI noise is autocorrelated
-* HRF convolution
-* How regressors represent task events
+* **Y**: BOLD time series
+* **X**: Design matrix (HRF-convolved regressors + confounds)
+* **β**: Parameter estimates
+* **ε**: Noise (autocorrelated)
 
 ---
 
-## **2. Building the Design Matrix**
+## **2. Design Matrix Construction**
 
-Includes:
+Students build:
 
-* Task conditions (convolved with **HRF**)
+* Task regressors (onset/duration/type)
+* Convolution with HRF models
 * High-pass filters
-* Motion parameters
+* Motion regressors
+* Physiological confound regressors
 * Scrubbing regressors
-* Physiological confounds (WM/CSF signals)
 
-Students visualize the design matrix and check for:
-
-* Collinearity
-* Correct timing
-* Regressor strength
+Design matrix quality checks include collinearity and shape diagnosis.
 
 ---
 
-## **3. Model Fitting in Nilearn**
+## **3. Model Fitting**
 
-Using `FirstLevelModel`, students learn:
+Using `FirstLevelModel`, students:
 
-* Fitting voxelwise GLMs
-* Creating contrasts (simple, differential, custom vectors)
-* Generating:
-
-  * **beta maps**
-  * **t-statistics**
-  * **z-statistics**
+* Fit voxelwise regression
+* Estimate β maps
+* Create contrasts
+* Generate t- and z-statistics
 
 ---
 
-## **4. Statistical Thresholding**
+## **4. Thresholding & Visualization**
 
-Students explore:
-
-* Voxelwise uncorrected thresholds
-* **FDR** correction
-* **Cluster-level correction**
-* Interpreting statistical maps carefully
+* Voxelwise thresholds
+* FDR & FWE corrections
+* Cluster-level inference
+* Interpretation cautions
 
 ---
 
-## **Learning Outcome**
+### **Outcome:**
 
-Students develop full competence in building and evaluating first-level GLM models for task-based fMRI data.
-
----
-
-# **Session 11b — Functional Connectivity Analysis**
-
-Students transition from activation-based analysis to **network-based** analysis.
+Students gain full proficiency in first-level fMRI statistical modeling and interpretation.
 
 ---
 
-## **1. What Is Connectivity?**
+# **Session 11b — Functional Connectivity**
 
-Connectivity reflects **statistical synchrony** of brain regions over time.
-Students understand differences:
-
-* **Functional Connectivity (FC)** → correlation
-* **Effective Connectivity** → causal influence
-* **Structural Connectivity** → white-matter pathways
+Students move into network-based neuroimaging analysis.
 
 ---
 
-## **2. The Fisher Z-transform**
+## **1. Conceptual Introduction**
 
-Because correlations are bounded and non-normal:
+Functional connectivity reflects **temporal co-fluctuation** between brain regions.
+Students learn distinctions between:
+
+* Functional connectivity
+* Effective connectivity
+* Structural connectivity
+
+---
+
+## **2. Fisher Z-Transform**
+
+Used to normalize correlation values:
+
 [
 Z = \tanh^{-1}(r)
 ]
 
-Used for:
-
-* Averaging
-* Group-level statistics
-* Hypothesis testing
+Enables proper group averaging and statistical tests.
 
 ---
 
 ## **3. Complete Connectivity Pipeline**
 
-### **Step 1 — Preprocessing**
+### **1 — Preprocessing**
 
-Includes motion correction, slice-time correction, normalization, and confound regression.
+Motion correction, confound regression, filtering, normalization.
 
-### **Step 2 — Defining ROIs**
+### **2 — ROI Definition**
 
-* Atlases (Harvard–Oxford, AAL, Schaefer)
-* Spherical seeds around coordinates
-* Networks from ICA maps
+Atlases (Harvard–Oxford, AAL, Schaefer) or seed coordinates.
 
-### **Step 3 — Extracting Time Series**
+### **3 — Time-Series Extraction**
 
-Using maskers:
+Using maskers to produce:
 
-* `NiftiLabelsMasker` for ROI–ROI
-* `NiftiSpheresMasker` for seed-to-voxel
+* ROI × time matrices
+* Seed time-series
 
-### **Step 4 — Computing Connectivity**
+### **4 — Connectivity Computation**
 
-Students compute:
+* Correlation matrices
+* Seed-to-voxel maps
+* Z-transform operations
 
-* ROI–ROI correlation matrices
-* Seed-to-voxel correlation maps
-* Group-averaged connectivity matrices
+### **5 — Visualization**
 
-### **Step 5 — Visualizing Connectivity**
-
-* Heatmaps
-* Connectome diagrams
-* Thresholded correlation matrices
+Heatmaps, connectome plots, thresholded maps.
 
 ---
 
@@ -549,64 +509,69 @@ Students compute:
 
 ### **Beta-Series Connectivity (BSC)**
 
-* GLM with one regressor per trial
-* Trial-wise betas correlated across ROIs
-* Captures trial-to-trial interplay
+Trial-wise GLM regressors → beta estimates → ROI correlations.
 
 ### **Psychophysiological Interaction (PPI)**
 
-* Interaction of:
-
-  * Task model
-  * Seed time-series
-  * Interaction terms
-* Measures task-modulated connectivity
+Tests task-modulated connectivity by adding an interaction term to the GLM.
 
 ---
 
-## **Learning Outcome**
+### **Outcome:**
 
-Students can construct ROI and seed-based connectivity analyses and understand advanced task-modulated connectivity models like PPI and BSC.
+Students learn modern methods to analyze and interpret functional brain networks.
 
 ---
 
-# ---
+# **🎯 Final Learning Outcomes**
 
-# **🎯 Final Learning Outcomes for the Entire Course**
-
-Students completing the course will be able to:
+After completing this course, students will be able to:
 
 ### **Programming & Data Handling**
 
-* Write clean Python code for scientific computing
-* Use NumPy and Pandas to manipulate massive datasets
-* Work fluently with NIfTI neuroimaging files
+* Use Python, NumPy, Pandas for scientific computing
+* Manipulate multidimensional MRI/fMRI datasets
+* Write reproducible, modular analysis code
 
-### **Neuroimaging Foundations**
+### **Neuroimaging Analysis**
 
-* Understand 3D/4D brain image structure
-* Visualize slices, volumes, and voxel time-series
-* Apply segmentation and registration techniques
+* Load, visualize, and inspect NIfTI files
+* Perform segmentation and registration
+* Build atlas-based ROI pipelines
+* Extract voxel- and ROI-level time series
 
-### **Advanced Analysis**
+### **Statistical & Network Analysis**
 
-* Build and evaluate GLM models
-* Generate contrast maps and interpret statistics
-* Construct ROI–ROI and seed-based connectivity analysis
-* Use maskers and atlases for data extraction and ROI creation
+* Build and evaluate first-level GLM models
+* Compute and interpret functional connectivity
+* Implement advanced methods (BSC, PPI)
+* Interpret results responsibly
+
+---
+
+# **📘 Reference**
+
+All concepts in Sessions **1–9** are based on:
+
+**Ariel Rokem & Tal Yarkoni (2024)**
+***Data Science for Neuroimaging: An Introduction***
+Princeton University Press
+
 
 ---
 
 # **🤝 Acknowledgments**
 
-This course builds on:
+This course is part of the **Neuroscience Research Training Program**,
+**fMRI Department – Interdisciplinary School**.
 
-* **Data Science for Neuroimaging**
-* The Python neuroimaging ecosystem (NiBabel, Nilearn, DIPY, scikit-image)
+---
+
+
 
 ### **Course Developers**
 
-* **Fatemeh Jafari** — Sessions 1–6
-* **Mohammad Saeed Soleimani** — Sessions 7–11
+* **Fatemeh Jafari** — Sessions 1–6 ( foundational sessions on data science & neuroimaging)
+* **Mohammad Saeed Soleimani** — Sessions 7–11  (advanced neuroimaging analysis modules)
 
 
