@@ -597,25 +597,6 @@ Students completing the course will be able to:
 
 ---
 
-# **⚙️ Installation**
-
-```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
-
-conda create -n neuroimg python=3.11
-conda activate neuroimg
-pip install numpy scipy pandas matplotlib scikit-image nilearn nibabel dipy
-```
-
-Launch notebooks:
-
-```bash
-jupyter lab
-```
-
----
-
 # **🤝 Acknowledgments**
 
 This course builds on:
